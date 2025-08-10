@@ -1,0 +1,565 @@
+</footer>
+
+<!-- Sticky Booking Bar (mobile) -->
+<div class="booking-bar">
+  <a href="tel:0944061555" class="btn" style="gap:6px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M2.25 6.75A4.5 4.5 0 0 1 6.75 2.25h.5a2.25 2.25 0 0 1 2.25 2.25v2.5a2.25 2.25 0 0 1-2.25 2.25h-.5a2.25 2.25 0 0 1-2.25-2.25v-2.5Zm0 10.5a4.5 4.5 0 0 0 4.5 4.5h.5a2.25 2.25 0 0 0 2.25-2.25v-2.5a2.25 2.25 0 0 0-2.25-2.25h-.5a2.25 2.25 0 0 0-2.25 2.25v2.5Zm19.5-10.5a4.5 4.5 0 0 0-4.5-4.5h-.5a2.25 2.25 0 0 0-2.25 2.25v2.5a2.25 2.25 0 0 0 2.25 2.25h.5a2.25 2.25 0 0 0 2.25-2.25v-2.5Zm0 10.5a4.5 4.5 0 0 1-4.5 4.5h-.5a2.25 2.25 0 0 1-2.25-2.25v-2.5a2.25 2.25 0 0 1 2.25-2.25h.5a2.25 2.25 0 0 1 2.25 2.25v2.5Z"/></svg>โทรจอง/ไลน์</a>
+  <a href="tel:0946966179" class="btn-outline" style="gap:6px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M2.25 6.75A4.5 4.5 0 0 1 6.75 2.25h.5a2.25 2.25 0 0 1 2.25 2.25v2.5a2.25 2.25 0 0 1-2.25 2.25h-.5a2.25 2.25 0 0 1-2.25-2.25v-2.5Zm0 10.5a4.5 4.5 0 0 0 4.5 4.5h.5a2.25 2.25 0 0 0 2.25-2.25v-2.5a2.25 2.25 0 0 0-2.25-2.25h-.5a2.25 2.25 0 0 0-2.25 2.25v2.5Zm19.5-10.5a4.5 4.5 0 0 0-4.5-4.5h-.5a2.25 2.25 0 0 0-2.25 2.25v2.5a2.25 2.25 0 0 0 2.25 2.25h.5a2.25 2.25 0 0 0 2.25-2.25v-2.5Zm0 10.5a4.5 4.5 0 0 1-4.5 4.5h-.5a2.25 2.25 0 0 1-2.25-2.25v-2.5a2.25 2.25 0 0 1 2.25-2.25h.5a2.25 2.25 0 0 1 2.25 2.25v2.5Z"/></svg>สอบถาม</a>
+</div>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MOSSA SPORT SOCIETY</title>
+  <meta name="description" content="ฟิตเนสครบวงจร ระยอง | Les Mills | สระว่ายน้ำ 50 ม. | สนามฟุตบอล | สนามแบดมินตัน" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700;900&family=IBM+Plex+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BG FX -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+<!-- Navbar -->
+
+<!-- Navbar ใหม่ -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">MOSSA <span>SPORT SOCIETY</span></a>
+    <button class="nav-toggle" aria-label="เปิดเมนู"><svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <ul class="menu">
+      <li><a href="#" id="service-menu-btn">บริการต่างๆ</a></li>
+      <li><a href="#pricing">ราคา</a></li>
+      <li><a href="#pt">คอร์ส PT</a></li>
+      <li><a href="#trainers">เทรนเนอร์</a></li>
+      <li><a href="#contact" class="btn btn-outline" style="padding:.5rem 1.2rem; font-size:.98em;">ติดต่อ</a></li>
+    </ul>
+<!-- Service Modal (with sub-menu) -->
+<div id="service-modal" class="trainer-modal">
+  <div class="trainer-modal-content" style="max-width:540px; width:96vw;">
+    <button class="trainer-modal-close" id="service-modal-close" aria-label="ปิด">×</button>
+    <div id="service-modal-body" style="max-height:70vh; overflow-y:auto;">
+      <!-- เนื้อหา modal จะถูกเติมโดย JS -->
+    </div>
+  </div>
+</div>
+  </div>
+</nav>
+
+
+  <!-- Hero (Parallax) -->
+  <header id="top" class="hero reveal">
+    <div class="parallax-bg"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>สปอร์ตคลับครบวงจรในระยอง</h1>
+        <p>ฟิตเนส • คลาสลิขสิทธิ์ Les Mills • สระว่ายน้ำ 50 ม. • สนามฟุตบอล • สนามแบดมินตัน</p>
+        <div class="cta">
+          <a href="tel:0944061555" class="btn cta-animate">094-406-1555</a>
+          <a href="tel:033012181" class="btn btn-ghost cta-animate">033-012-181</a>
+        </div>
+        <div class="hero-note">📍 3/51 หมู่ 2 ต.เชิงเนิน อ.เมือง จ.ระยอง</div>
+      </div>
+      <div class="hero-card card">
+        <div class="card-title">ไฮไลต์บริการ</div>
+        <ul class="taglist">
+          <li class="tag">ฟรี InBody</li>
+          <li class="tag">Life Fitness</li>
+          <li class="tag">Les Mills 200+ คลาส/เดือน</li>
+          <li class="tag">สระระบบเกลือ 50 ม.</li>
+          <li class="tag">ซาวน่า/สตรีม</li>
+          <li class="tag">เทรนเนอร์วิทยาศาสตร์การกีฬา</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Shape Divider -->
+    <div class="shape-divider">
+      <svg viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0,60 C360,120 1080,0 1440,60 L1440,90 L0,90 Z"/></svg>
+    </div>
+  </header>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section reveal">
+    <div class="shape-divider shape-divider-top">
+      <svg viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0,60 C360,0 1080,120 1440,60 L1440,0 L0,0 Z"/></svg>
+    </div>
+    <div class="container">
+      <h2 class="section-title">ราคาและสมาชิก</h2>
+      <div class="cards-grid">
+        <article class="card price">
+          <div class="ribbon">Popular</div>
+          <h3>สมาชิกเดี่ยว</h3>
+          <div class="line"></div>
+          <div class="price-row"><span>รายวัน</span><strong>500 บาท</strong></div>
+          <div class="price-row"><span>1 เดือน</span><strong>5,000 บาท</strong></div>
+          <div class="price-row"><span>3 เดือน</span><strong>9,900 บาท</strong></div>
+          <div class="price-row"><span>6 เดือน</span><strong>17,500 บาท</strong></div>
+          <div class="price-row"><span>12 เดือน</span><strong>22,500 บาท</strong></div>
+        </article>
+
+        <article class="card price">
+          <h3>สระว่ายน้ำ</h3>
+          <div class="line"></div>
+          <div class="price-row"><span>เด็ก (รายครั้ง)</span><strong>100</strong></div>
+          <div class="price-row"><span>เด็ก (คูปอง 10 ครั้ง)</span><strong>900</strong></div>
+          <div class="price-row"><span>ผู้ใหญ่ (รายครั้ง)</span><strong>150</strong></div>
+          <div class="price-row"><span>ผู้ใหญ่ (คูปอง 10 ครั้ง)</span><strong>1,300</strong></div>
+          <small class="muted">เช่าผ้าขนหนู 20 บาท</small>
+        </article>
+
+        <article class="card price">
+          <h3>สนามกีฬา</h3>
+          <div class="line"></div>
+          <div class="price-row"><span>ฟุตบอลในร่ม ก่อน 17:00</span><strong>800</strong></div>
+          <div class="price-row"><span>ฟุตบอลในร่ม หลัง 17:00</span><strong>1,200</strong></div>
+          <div class="price-row"><span>กลางแจ้ง ก่อน 17:00</span><strong>1,000</strong></div>
+          <div class="price-row"><span>กลางแจ้ง หลัง 17:00</span><strong>1,400</strong></div>
+          <div class="price-row"><span>แบดมินตัน ก่อน 17:00</span><strong>120</strong></div>
+          <div class="price-row"><span>แบดมินตัน หลัง 17:00</span><strong>150</strong></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PT -->
+  <section id="pt" class="section reveal">
+    <div class="shape-divider">
+      <svg viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0,60 C360,120 1080,0 1440,60 L1440,90 L0,90 Z"/></svg>
+    </div>
+    <div class="container">
+      <h2 class="section-title">คอร์ส PT / นวดกีฬา / มวย</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>PT เดี่ยว (บาท)</h3>
+          <div class="line"></div>
+          <div class="price-row"><span>1 ชม.</span><strong>950</strong></div>
+          <div class="price-row"><span>5 ชม.</span><strong>4,250</strong></div>
+          <div class="price-row"><span>10 ชม.</span><strong>7,500</strong></div>
+          <div class="price-row"><span>25 ชม.</span><strong>17,500</strong></div>
+          <div class="price-row"><span>50 ชม.</span><strong>33,750</strong></div>
+          <div class="price-row"><span>80 ชม.</span><strong>52,000</strong></div>
+        </article>
+        <article class="card">
+          <h3>PT คู่ (บาท)</h3>
+          <div class="line"></div>
+          <div class="price-row"><span>1 ชม.</span><strong>1,425</strong></div>
+          <div class="price-row"><span>5 ชม.</span><strong>6,375</strong></div>
+          <div class="price-row"><span>10 ชม.</span><strong>11,250</strong></div>
+          <div class="price-row"><span>25 ชม.</span><strong>26,250</strong></div>
+          <div class="price-row"><span>50 ชม.</span><strong>50,625</strong></div>
+          <div class="price-row"><span>80 ชม.</span><strong>78,000</strong></div>
+        </article>
+        <article class="card">
+          <h3>หมายเหตุ</h3>
+          <div class="line"></div>
+          <ul class="bullets">
+            <li>ต้องเป็นสมาชิก (Membership) หรือบริษัทคู่สัญญา</li>
+            <li>Boxing PT / Sport Massage ราคาเท่า PT เดี่ยว</li>
+            <li>First PT 3 ชม. 1,200 บาท (เงื่อนไขตามบริษัท)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+<!-- Trainers -->
+<section id="trainers" class="section reveal">
+  <div class="shape-divider shape-divider-top">
+    <svg viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0,60 C360,0 1080,120 1440,60 L1440,0 L0,0 Z"/></svg>
+  </div>
+  <div class="container">
+    <h2 class="section-title">โปรไฟล์เทรนเนอร์</h2>
+
+  <div class="trainers-grid">
+      <!-- T. BEST -->
+      <article class="card trainer">
+        <div class="avatar" data-initials="WB"></div>
+        <h3 class="t-name">T.BEST — Worasit M.</h3>
+        <p class="t-role muted">Functional • Weight Loss • Lower Back Pain</p>
+        <ul class="taglist">
+          <li class="tag">Body Combat</li>
+          <li class="tag">Body Pump</li>
+          <li class="tag">Thai Boxing</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><svg width="20" height="20" fill="currentColor"><use href="#icon-facebook"/></svg></a>
+          <a href="#" title="Instagram"><svg width="20" height="20" fill="currentColor"><use href="#icon-instagram"/></svg></a>
+        </div>
+        <button class="btn btn-ghost profile-btn" data-trainer="best">ดูโปรไฟล์</button>
+      </article>
+
+      <!-- T. ARM -->
+      <article class="card trainer">
+        <div class="avatar" data-initials="CA"></div>
+        <h3 class="t-name">T.ARM — Chakrit T.</h3>
+        <p class="t-role muted">German-Thai Sports • Conditioning</p>
+        <ul class="taglist">
+          <li class="tag">Body Combat</li>
+          <li class="tag">Circuit Training</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><svg width="20" height="20" fill="currentColor"><use href="#icon-facebook"/></svg></a>
+          <a href="#" title="Instagram"><svg width="20" height="20" fill="currentColor"><use href="#icon-instagram"/></svg></a>
+        </div>
+        <button class="btn btn-ghost profile-btn" data-trainer="arm">ดูโปรไฟล์</button>
+      </article>
+
+      <!-- T. PLOY -->
+      <article class="card trainer">
+        <div class="avatar" data-initials="SP"></div>
+        <h3 class="t-name">T.PLOY — Savitee J.</h3>
+        <p class="t-role muted">CPR • Prehab & Rehab</p>
+        <ul class="taglist">
+          <li class="tag">Body Pump</li>
+          <li class="tag">Body Jam</li>
+          <li class="tag">Zumba</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><svg width="20" height="20" fill="currentColor"><use href="#icon-facebook"/></svg></a>
+          <a href="#" title="Instagram"><svg width="20" height="20" fill="currentColor"><use href="#icon-instagram"/></svg></a>
+        </div>
+        <button class="btn btn-ghost profile-btn" data-trainer="ploy">ดูโปรไฟล์</button>
+      </article>
+
+      <!-- T. TAGOR -->
+      <article class="card trainer">
+        <div class="avatar" data-initials="AT"></div>
+        <h3 class="t-name">T.TAGOR — Apiruk W.</h3>
+        <p class="t-role muted">Sports/Thai Massage • Boxing</p>
+        <ul class="taglist">
+          <li class="tag">Body Combat</li>
+          <li class="tag">Tabata</li>
+          <li class="tag">CXBALL</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><svg width="20" height="20" fill="currentColor"><use href="#icon-facebook"/></svg></a>
+          <a href="#" title="Instagram"><svg width="20" height="20" fill="currentColor"><use href="#icon-instagram"/></svg></a>
+        </div>
+        <button class="btn btn-ghost profile-btn" data-trainer="tagor">ดูโปรไฟล์</button>
+      </article>
+
+      <!-- T. PLAM -->
+      <article class="card trainer">
+        <div class="avatar" data-initials="KP"></div>
+        <h3 class="t-name">T.PLAM — Kittasin N.</h3>
+        <p class="t-role muted">Olympic Lift • Prehab • Nutrition</p>
+        <ul class="taglist">
+          <li class="tag">Body Pump</li>
+          <li class="tag">Fatburn</li>
+          <li class="tag">Pound</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><svg width="20" height="20" fill="currentColor"><use href="#icon-facebook"/></svg></a>
+          <a href="#" title="Instagram"><svg width="20" height="20" fill="currentColor"><use href="#icon-instagram"/></svg></a>
+        </div>
+        <button class="btn btn-ghost profile-btn" data-trainer="plam">ดูโปรไฟล์</button>
+      </article>
+
+      <!-- T. SMART -->
+      <article class="card trainer">
+        <div class="avatar" data-initials="TS"></div>
+        <h3 class="t-name">T.SMART — Teerapong J.</h3>
+        <p class="t-role muted">Runner Training • Sports Massage</p>
+        <ul class="taglist">
+          <li class="tag">Body Combat</li>
+          <li class="tag">Body Pump</li>
+          <li class="tag">Fatburn</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><svg width="20" height="20" fill="currentColor"><use href="#icon-facebook"/></svg></a>
+          <a href="#" title="Instagram"><svg width="20" height="20" fill="currentColor"><use href="#icon-instagram"/></svg></a>
+        </div>
+        <button class="btn btn-ghost profile-btn" data-trainer="smart">ดูโปรไฟล์</button>
+      </article>
+<!-- Trainer Modals -->
+<div id="trainer-modal" class="trainer-modal">
+  <div class="trainer-modal-content">
+    <button class="trainer-modal-close" aria-label="ปิด">×</button>
+    <div id="trainer-modal-body"></div>
+  </div>
+</div>
+<!-- Gallery Section -->
+<section id="gallery" class="section reveal">
+  <div class="container">
+    <h2 class="section-title">บรรยากาศ & GALLERY</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80" alt="ฟิตเนส" class="gallery-img" />
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="สระว่ายน้ำ" class="gallery-img" />
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="สนามกีฬา" class="gallery-img" />
+      <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="คลาสออกกำลังกาย" class="gallery-img" />
+    </div>
+  </div>
+  <div class="shape-divider shape-divider-top">
+    <svg viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0,60 C360,0 1080,120 1440,60 L1440,0 L0,0 Z"/></svg>
+  </div>
+</section>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <div class="container contact-card card">
+      <div class="contact-col">
+        <h2 class="section-title">ติดต่อเรา</h2>
+        <p class="muted">📍 3/51 หมู่ 2 ต.เชิงเนิน อ.เมือง จ.ระยอง 21000</p>
+        <div class="cta">
+          <a href="tel:0944061555" class="btn">094-406-1555</a>
+          <a href="tel:033012181" class="btn btn-ghost">033-012-181</a>
+        </div>
+        <a class="link" target="_blank" rel="noreferrer" href="https://facebook.com/MossaSport">Facebook Page</a>
+      </div>
+      <ul class="rules">
+        <li>ฟิตเนส 16+ (12–16 ใช้เฉพาะคาร์ดิโอ/คลาส พร้อมผู้ดูแล)</li>
+        <li>สระว่ายน้ำต้องสวมชุดว่ายน้ำและหมวก</li>
+        <li>งดโค้ชภายนอกสอนภายในฟิตเนส</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2025 MOSSA SPORT SOCIETY. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="#" title="Facebook"><svg width="22" height="22" fill="currentColor"><use href="#icon-facebook"/></svg></a>
+        <a href="#" title="Instagram"><svg width="22" height="22" fill="currentColor"><use href="#icon-instagram"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SVG ICONS SPRITE -->
+  <svg style="display:none;">
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M17.5 2h-3A5.5 5.5 0 0 0 9 7.5V9H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-8h2.09a1 1 0 0 0 .99-1.14l-.25-2A1 1 0 0 0 15.09 9H13V7.5A1.5 1.5 0 0 1 14.5 6h3a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm6.5 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></symbol>
+  </svg>
+
+  <script>
+    // Service modal logic (sub-menu)
+    const serviceModal = document.getElementById('service-modal');
+    const serviceModalBody = document.getElementById('service-modal-body');
+    // ปุ่มปิด modal (X) - robust
+    document.addEventListener('DOMContentLoaded', function() {
+      const closeBtn = serviceModal.querySelector('.trainer-modal-close');
+      if(closeBtn) closeBtn.addEventListener('click', ()=>serviceModal.classList.remove('open'));
+    });
+    const serviceSections = {
+      main: `
+        <h2 style='margin-top:0;'>บริการทั้งหมดของ MOSSA Sport Society</h2>
+        <div class='muted' style='margin-bottom:12px;'>พร้อมราคาล่าสุดไว้ให้ครบในที่เดียวแล้วค่ะ</div>
+        <div class='service-menu-list'>
+          <button class='btn btn-outline service-menu-btn' data-section='fitness'>🏋️‍♂️ ฟิตเนส (Fitness)</button>
+          <button class='btn btn-outline service-menu-btn' data-section='pt'>🧑‍🏫 Personal Trainer (PT)</button>
+          <button class='btn btn-outline service-menu-btn' data-section='pool'>🏊 สระว่ายน้ำ</button>
+          <button class='btn btn-outline service-menu-btn' data-section='badminton'>🏸 สนามแบดมินตัน</button>
+          <button class='btn btn-outline service-menu-btn' data-section='football'>⚽ สนามฟุตบอล</button>
+        </div>
+      `,
+      fitness: `
+        <button class='btn btn-ghost service-back-btn' style='margin-bottom:10px;'>&larr; กลับ</button>
+        <h3>🏋️‍♂️ ฟิตเนส (Fitness)</h3>
+        <table class="service-table"><thead><tr><th>ระยะเวลา</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>1 วัน</td><td>500</td></tr>
+          <tr><td>1 เดือน</td><td>5,000</td></tr>
+          <tr><td>3 เดือน</td><td>9,900</td></tr>
+          <tr><td>6 เดือน</td><td>17,500</td></tr>
+          <tr><td>12 เดือน</td><td>22,500</td></tr>
+        </tbody></table>
+      `,
+      pt: `
+        <button class='btn btn-ghost service-back-btn' style='margin-bottom:10px;'>&larr; กลับ</button>
+        <h3>🧑‍🏫 Personal Trainer (PT)</h3>
+        <b>1) PT ฟิตเนส (ผู้ใหญ่ เดี่ยว)</b>
+        <table class="service-table"><thead><tr><th>ชั่วโมง</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>1 ชม.</td><td>950</td></tr>
+          <tr><td>5 ชม.</td><td>4,250</td></tr>
+          <tr><td>10 ชม.</td><td>7,500</td></tr>
+          <tr><td>80 ชม.</td><td>52,000</td></tr>
+        </tbody></table>
+        <b>2) PT คู่ (ผู้ใหญ่)</b>
+        <table class="service-table"><thead><tr><th>ชั่วโมง</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>3 ชม.</td><td>1,425</td></tr>
+          <tr><td>5 ชม.</td><td>6,375</td></tr>
+          <tr><td>10 ชม.</td><td>11,250</td></tr>
+          <tr><td>25 ชม.</td><td>26,250</td></tr>
+          <tr><td>50 ชม.</td><td>50,625</td></tr>
+          <tr><td>80 ชม.</td><td>78,000</td></tr>
+        </tbody></table>
+        <b>3) PT เด็ก</b>
+        <table class="service-table"><thead><tr><th>ประเภท</th><th>ชั่วโมง</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>เดี่ยว</td><td>10 ชม.</td><td>8,000</td></tr>
+          <tr><td>คู่</td><td>10 ชม.</td><td>13,000</td></tr>
+        </tbody></table>
+        <b>4) PT Aqua (ในน้ำ)</b>
+        <table class="service-table"><thead><tr><th>ประเภท</th><th>ชั่วโมง</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>เดี่ยว</td><td>10 ชม.</td><td>7,500</td></tr>
+          <tr><td>คู่</td><td>10 ชม.</td><td>11,250</td></tr>
+          <tr><td>2-3 คน</td><td>10 ชม.</td><td>13,125</td></tr>
+        </tbody></table>
+        <b>5) PT Dance (เต้น)</b>
+        <table class="service-table"><thead><tr><th>ประเภท</th><th>ชั่วโมง</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>เดี่ยว</td><td>10 ชม.</td><td>7,500</td></tr>
+          <tr><td>คู่</td><td>10 ชม.</td><td>11,250</td></tr>
+          <tr><td>2-3 คน</td><td>10 ชม.</td><td>13,125</td></tr>
+        </tbody></table>
+        <b>6) PT นวดกีฬา / นวดคลายเส้น</b>
+        <table class="service-table"><thead><tr><th>ชั่วโมง</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>1 ชม.</td><td>950</td></tr>
+          <tr><td>3 ชม.</td><td>4,250</td></tr>
+          <tr><td>10 ชม.</td><td>7,500</td></tr>
+          <tr><td>25 ชม.</td><td>17,500</td></tr>
+          <tr><td>50 ชม.</td><td>33,750</td></tr>
+          <tr><td>80 ชม.</td><td>52,000</td></tr>
+        </tbody></table>
+        <b>7) PT สอนมวย</b>
+        <table class="service-table"><thead><tr><th>ชั่วโมง</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>1 ชม.</td><td>950</td></tr>
+          <tr><td>3 ชม.</td><td>4,250</td></tr>
+          <tr><td>10 ชม.</td><td>7,500</td></tr>
+          <tr><td>25 ชม.</td><td>17,500</td></tr>
+          <tr><td>50 ชม.</td><td>33,750</td></tr>
+          <tr><td>80 ชม.</td><td>52,000</td></tr>
+        </tbody></table>
+      `,
+      pool: `
+        <button class='btn btn-ghost service-back-btn' style='margin-bottom:10px;'>&larr; กลับ</button>
+        <h3>🏊 สระว่ายน้ำ</h3>
+        <table class="service-table"><thead><tr><th>ประเภท</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>สูงกว่า 150 ซม.</td><td>150</td></tr>
+          <tr><td>ต่ำกว่า 150 ซม.</td><td>100</td></tr>
+          <tr><td>คูปองผู้ใหญ่ 10 ครั้ง</td><td>1,300</td></tr>
+          <tr><td>คูปองเด็ก 10 ครั้ง</td><td>900</td></tr>
+          <tr><td>เช่าผ้าขนหนู</td><td>20 / ผืน</td></tr>
+          <tr><td>ค่าลงสระ (เรียนว่ายน้ำ)</td><td>50 / ครั้ง</td></tr>
+        </tbody></table>
+        <b>คอร์สเรียนว่ายน้ำ 10 ชม.</b>
+        <table class="service-table"><thead><tr><th>ประเภท</th><th>ราคา (บาท)</th></tr></thead><tbody>
+          <tr><td>เดี่ยว</td><td>3,500</td></tr>
+          <tr><td>คู่</td><td>5,500</td></tr>
+          <tr><td>3 คน</td><td>7,500</td></tr>
+          <tr><td>4 คน</td><td>9,500</td></tr>
+          <tr><td>5 คน</td><td>11,500</td></tr>
+        </tbody></table>
+      `,
+      badminton: `
+        <button class='btn btn-ghost service-back-btn' style='margin-bottom:10px;'>&larr; กลับ</button>
+        <h3>🏸 สนามแบดมินตัน</h3>
+        <table class="service-table"><thead><tr><th>เวลา</th><th>ราคา (บาท/ชม.)</th></tr></thead><tbody>
+          <tr><td>ก่อน 17.00 น.</td><td>120</td></tr>
+          <tr><td>หลัง 17.00 น.</td><td>150</td></tr>
+        </tbody></table>
+      `,
+      football: `
+        <button class='btn btn-ghost service-back-btn' style='margin-bottom:10px;'>&larr; กลับ</button>
+        <h3>⚽ สนามฟุตบอล</h3>
+        <b>สนามเล็ก</b>
+        <table class="service-table"><thead><tr><th>เวลา</th><th>ราคา (บาท/ชม.)</th></tr></thead><tbody>
+          <tr><td>ก่อน 17.00 น.</td><td>800</td></tr>
+          <tr><td>หลัง 17.00 น.</td><td>1,200</td></tr>
+        </tbody></table>
+        <b>สนามใหญ่</b>
+        <table class="service-table"><thead><tr><th>เวลา</th><th>ราคา (บาท/ชม.)</th></tr></thead><tbody>
+          <tr><td>ก่อน 17.00 น.</td><td>1,000</td></tr>
+          <tr><td>หลัง 17.00 น.</td><td>1,400</td></tr>
+        </tbody></table>
+      `
+    };
+    function renderServiceSection(section) {
+      serviceModalBody.innerHTML = serviceSections[section] || '';
+      // add event listeners for sub-menu
+      serviceModalBody.querySelectorAll('.service-menu-btn').forEach(btn => {
+        btn.onclick = ()=>renderServiceSection(btn.dataset.section);
+      });
+      // back button
+      const backBtn = serviceModalBody.querySelector('.service-back-btn');
+      if(backBtn) backBtn.onclick = ()=>renderServiceSection('main');
+    }
+    document.getElementById('service-menu-btn').onclick = function(e){
+      e.preventDefault();
+      renderServiceSection('main');
+      serviceModal.classList.add('open');
+    };
+    serviceModal.onclick = e=>{if(e.target===serviceModal)serviceModal.classList.remove('open');};
+    // Trainer profiles data
+    const trainerProfiles = {
+      best: {
+        name: 'T.BEST - Worasit Methakawinthornkui',
+        edu: '🎓 การศึกษา: ปริญญาตรี วิทยาศาสตร์การกีฬาและการออกกำลังกาย ม.บูรพา',
+        cert: `<b>📜 Certifications:</b><br>Personal Trainer (PESA)<br>Functional Fusion<br>Weight Loss<br>Lower Back Pain<br>Youth Exercise<br>นวดไทย 150 ชม.<br>Life Saving`,
+        classes: '🏋️ คลาสที่สอน: Body Combat, Body Pump, Fatburn Extreme, Thai Boxing, Tabata, Bike, Stretching'
+      },
+      arm: {
+        name: 'T.ARM - Chakrit Thanomsin',
+        edu: '🎓 การศึกษา: ปริญญาตรี วิทยาศาสตร์การกีฬาและสุขภาพ สถาบันการพลศึกษา ชลบุรี',
+        cert: `<b>📜 Certifications:</b><br>German-Thai Sport Co-operation`,
+        classes: '🏋️ คลาสที่สอน: Body Combat, Circuit Training'
+      },
+      ploy: {
+        name: 'T.PLOY - Savitee Jattrakool',
+        edu: '🎓 การศึกษา: ปริญญาตรี วิทยาศาสตร์การกีฬา สถาบันการพลศึกษา ชลบุรี',
+        cert: `<b>📜 Certifications:</b><br>CPR, Prehab & Rehab`,
+        classes: '🏋️ คลาสที่สอน: Body Pump, Body Jam, Urbanize, Zumba, Bike'
+      },
+      tagor: {
+        name: 'T.TAGOR - Apiruk Wongsri',
+        edu: '🎓 การศึกษา: ปริญญาตรี วิทยาศาสตร์การกีฬาและออกกำลังกาย สถาบันการพลศึกษา ชลบุรี',
+        cert: `<b>📜 Certifications:</b><br>Sports Massage, Thai Massage`,
+        classes: '🏋️ คลาสที่สอน: Body Combat, Boxing, Circuit Training, Tabata, CXBall'
+      },
+      plam: {
+        name: 'T.PLAM - Kittasin Nakchinwong',
+        edu: '🎓 การศึกษา: ปริญญาตรี วิทยาศาสตร์การกีฬาและออกกำลังกาย ม.เกษตรศาสตร์',
+        cert: `<b>📜 Certifications:</b><br>Muscle Strength<br>Prehab<br>Olympic Lift<br>Nutrition<br>Youth Exercise<br>Thai Massage<br>Sports Massage<br>Myofascial Release<br>Aroma<br>Cupping`,
+        classes: '🏋️ คลาสที่สอน: Body Combat, Body Pump, Fatburn, Pound, Piloxing'
+      },
+      smart: {
+        name: 'T.SMART - Teerapong Janthaharn',
+        edu: '🎓 การศึกษา: ปริญญาตรี วิทยาศาสตร์การกีฬา ม.บูรพา',
+        cert: `<b>📜 Certifications:</b><br>Exercise Instruction<br>Nutrition Mastercourse<br>Youth Exercise<br>Runner Training<br>Sports Massage<br>Fitness Management`,
+        classes: '🏋️ คลาสที่สอน: Body Pump, Body Combat, Fatburn'
+      }
+    };
+
+    // Modal logic
+    const modal = document.getElementById('trainer-modal');
+    const modalBody = document.getElementById('trainer-modal-body');
+    document.querySelectorAll('.profile-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const t = trainerProfiles[this.dataset.trainer];
+        if(t) {
+          modalBody.innerHTML = `<h3 style='margin-bottom:8px;'>${t.name}</h3><div style='margin-bottom:8px;'>${t.edu}</div><div style='margin-bottom:8px;'>${t.cert}</div><div>${t.classes}</div>`;
+          modal.classList.add('open');
+        }
+      });
+    });
+    document.querySelector('.trainer-modal-close').onclick = ()=>modal.classList.remove('open');
+    modal.onclick = e=>{if(e.target===modal)modal.classList.remove('open');};
+    // Parallax effect for hero
+    window.addEventListener('scroll', function() {
+      const parallax = document.querySelector('.parallax-bg');
+      if(parallax) {
+        parallax.style.transform = `translateY(${window.scrollY * 0.2}px)`;
+      }
+    });
+
+    // เมนูมือถือ (hamburger)
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.menu');
+    toggle?.addEventListener('click', ()=> menu.classList.toggle('open'));
+
+    // ปิดเมนูเมื่อคลิกเมนู (มือถือ)
+    document.querySelectorAll('.menu a').forEach(a => {
+      a.addEventListener('click', () => menu.classList.remove('open'));
+    });
+
+    // เผยแอนิเมชันเมื่อเลื่อนถึง
+    const io = new IntersectionObserver((els)=>{
+      els.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      })
+    },{threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
