@@ -552,6 +552,13 @@
       }
     });
 
+    // เปลี่ยนสี Navbar เมื่อเลื่อน
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+
     // เมนูมือถือ (hamburger)
     const toggle = document.querySelector('.nav-toggle');
     const menu = document.querySelector('.menu');
