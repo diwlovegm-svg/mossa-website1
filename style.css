@@ -9,8 +9,10 @@
   --bg2: #e2e8f0;
   --text: #1e293b;
   --muted: #64748b;
+codex/add-css-variables-in-style.css
   --glass: rgba(5,150,105,.07);
   --border: rgba(4,120,87,.13);
+ fvato7-codex/improve-website-appearance
   --shadow: 0 14px 36px rgba(5,150,105,.13);
 }
 * , *::before, *::after { box-sizing: border-box; }
@@ -24,6 +26,48 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Prompt','Noto Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
+
+fevdda-codex/improve-website-appearance
+  --shadow: 0 14px 36px rgba(5,150,105,.13);
+}
+* , *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Prompt','Noto Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Prompt','Noto Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+  --shadow: 0 14px 36px rgba(5,150,105,.13);
+  --pur: #7b2cbf;
+  --pur2: #9d4edd;
+  --org: #ff7a00;
+  --org2: #ffb35c;
+}
+body {
+  font-family: 'Noto Sans Thai','IBM Plex Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  color: var(--text);
+}
+
+  --glass: rgba(5,150,105,.07);
+  --border: rgba(4,120,87,.13);
+  --shadow: 0 14px 36px rgba(5,150,105,.13);
+}
+* , *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans Thai','IBM Plex Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  color: var(--text);
+}
+ main
+ main
+main
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: .75rem 1.4rem; border-radius: 1.25rem; border: 1.5px solid transparent;
@@ -163,6 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   --shadow:0 14px 36px rgba(0,0,0,.35);
 }
 html,body{height:100%}
+ fvato7-codex/improve-website-appearance
 body{
   margin:0; color:var(--text);
   font-family:"Prompt","Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
@@ -173,6 +218,18 @@ body{
   overflow-x:hidden;
   line-height:1.6;
 }
+
+body{
+  margin:0; color:var(--text);
+  font-family:"Prompt","Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:
+    radial-gradient(1200px 600px at 10% -5%, rgba(123,44,191,.22), transparent 60%),
+    radial-gradient(900px 600px at 110% 0%, rgba(255,122,0,.22), transparent 55%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  overflow-x:hidden;
+  line-height:1.6;
+}
+ main
 
 /* Soft moving blobs */
 .bg-orb{position:fixed; inset:auto; pointer-events:none; filter:blur(50px); opacity:.45; z-index:-1; animation:float 18s ease-in-out infinite}
@@ -194,10 +251,17 @@ body{
 .link{color:#fff;text-decoration:underline;}
 
 /* ======= Navbar ======= */
+ fvato7-codex/improve-website-appearance
 .navbar{position:fixed;top:0;left:0;width:100%;z-index:50;backdrop-filter:blur(12px);border-bottom:1px solid var(--border);
   background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,0));
   transition:background .3s, box-shadow .3s;}
 .navbar.scrolled{background:rgba(15,23,42,.9);box-shadow:0 2px 12px rgba(0,0,0,.25);}
+
+.navbar{position:fixed;top:0;left:0;width:100%;z-index:50;backdrop-filter:blur(12px);border-bottom:1px solid var(--border);
+  background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,0));
+  transition:background .3s, box-shadow .3s;}
+.navbar.scrolled{background:rgba(15,23,42,.9);box-shadow:0 2px 12px rgba(0,0,0,.25);}
+ main
 .nav-inner{display:flex;align-items:center;justify-content:space-between}
 .logo{font-weight:900; letter-spacing:.6px; text-decoration:none; color:#fff}
 .logo span{opacity:.85}
@@ -325,6 +389,6 @@ body{
   font-size: 1.1rem;
 }
 
-/* ใส่ภาพจริงแทนได้: 
-   <img class="avatar" src="trainer.jpg"> จะใช้รูปโดยไม่แสดง ::after */
+/* ใส่ภาพจริงแทนได้:
+   <div class="avatar"><img src="trainer.jpg" alt=""></div> */
 .avatar img{width:100%; height:100%; object-fit:cover; border-radius:50%; display:block}
