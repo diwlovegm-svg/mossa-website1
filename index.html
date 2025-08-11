@@ -1,8 +1,4 @@
- codex/update-website-for-professional-look
 <!DOCTYPE html>
-
-<!DOCTYPE html>
- main
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
@@ -10,7 +6,7 @@
   <title>MOSSA SPORT SOCIETY</title>
   <meta name="description" content="ฟิตเนสครบวงจร ระยอง | Les Mills | สระว่ายน้ำ 50 ม. | สนามฟุตบอล | สนามแบดมินตัน" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700;900&family=IBM+Plex+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&family=Noto+Sans+Thai:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -550,6 +546,13 @@
       if(parallax) {
         parallax.style.transform = `translateY(${window.scrollY * 0.2}px)`;
       }
+    });
+
+    // เปลี่ยนสี Navbar เมื่อเลื่อน
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
     });
 
     // เมนูมือถือ (hamburger)
