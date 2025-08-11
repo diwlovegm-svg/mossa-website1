@@ -12,6 +12,10 @@
   --glass: rgba(5,150,105,.07);
   --border: rgba(4,120,87,.13);
   --shadow: 0 14px 36px rgba(5,150,105,.13);
+  --pur: #7b2cbf;
+  --pur2: #9d4edd;
+  --org: #ff7a00;
+  --org2: #ffb35c;
 }
 body {
   font-family: 'Noto Sans Thai','IBM Plex Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
