@@ -16,9 +16,13 @@
 * , *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Noto Sans Thai','IBM Plex Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  font-family: 'Prompt','Noto Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
   color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Prompt','Noto Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
@@ -44,19 +48,6 @@ body {
 .btn-ghost:hover, .btn-ghost:focus {
   background: var(--emerald-600); color: #fff;
 }
-.trainer-modal-content {
-  background: #fff; border-radius: 1.5rem; box-shadow: 0 10px 48px rgba(5,150,105,.13), 0 2px 8px rgba(0,0,0,.10);
-  padding: 32px 24px; max-width: 540px; width: 90vw; color: var(--text); position: relative;
-  border: 1.5px solid var(--emerald-600);
-  animation: modalIn .25s cubic-bezier(.4,1,.6,1);
-}
-.trainer-modal-content h2, .trainer-modal-content h3 {
-  border-bottom: 1.5px solid var(--emerald-600); padding-bottom: 8px; margin-bottom: 16px;
-}
-.trainer-modal-close {
-  position: absolute; top: 12px; right: 16px; background: #fff; border: 2px solid var(--emerald-600); color: var(--emerald-600); font-size: 2rem; cursor: pointer; line-height: 1; border-radius: 50%; width: 38px; height: 38px; box-shadow: 0 2px 8px rgba(5,150,105,.10); transition: .2s;
-}
-.trainer-modal-close:hover { background: var(--emerald-600); color: #fff; }
 .booking-bar {
   display: none; position: fixed; bottom: 0; left: 0; width: 100vw; z-index: 1000;
   background: #fff; box-shadow: 0 -2px 18px rgba(5,150,105,.13);
@@ -180,6 +171,7 @@ body{
     radial-gradient(900px 600px at 110% 0%, rgba(255,122,0,.22), transparent 55%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
   overflow-x:hidden;
+  line-height:1.6;
 }
 
 /* Soft moving blobs */
@@ -203,7 +195,9 @@ body{
 
 /* ======= Navbar ======= */
 .navbar{position:fixed;top:0;left:0;width:100%;z-index:50;backdrop-filter:blur(12px);border-bottom:1px solid var(--border);
-  background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,0));}
+  background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,0));
+  transition:background .3s, box-shadow .3s;}
+.navbar.scrolled{background:rgba(15,23,42,.9);box-shadow:0 2px 12px rgba(0,0,0,.25);}
 .nav-inner{display:flex;align-items:center;justify-content:space-between}
 .logo{font-weight:900; letter-spacing:.6px; text-decoration:none; color:#fff}
 .logo span{opacity:.85}
@@ -276,6 +270,17 @@ body{
 @media (max-width:900px){.contact-card{grid-template-columns:1fr}}
 .rules{list-style:disc; margin:8px 0 0 18px; color:var(--muted)}
 .hero-note{color:var(--muted); margin-top:8px}
+
+/* ======= Back to Top Button ======= */
+.back-to-top{
+  position:fixed; right:20px; bottom:20px; width:42px; height:42px;
+  border:none; border-radius:50%; background:var(--emerald-600); color:#fff;
+  display:grid; place-items:center; cursor:pointer;
+  box-shadow:0 4px 12px rgba(0,0,0,.25); opacity:0; pointer-events:none;
+  transform:translateY(8px); transition:opacity .3s, transform .3s;
+}
+.back-to-top:hover{background:var(--emerald-700)}
+.back-to-top.show{opacity:1; pointer-events:auto; transform:translateY(0)}
 
 /* ======= Reveal on scroll ======= */
 .reveal{opacity:0; transform:translateY(12px); transition:opacity .5s ease, transform .5s ease}
