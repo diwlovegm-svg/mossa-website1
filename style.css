@@ -9,6 +9,21 @@
   --bg2: #e2e8f0;
   --text: #1e293b;
   --muted: #64748b;
+codex/add-css-variables-in-style.css
+  --glass: rgba(5,150,105,.07);
+  --border: rgba(4,120,87,.13);
+  --shadow: 0 14px 36px rgba(5,150,105,.13);
+  --pur: #7b2cbf;
+  --pur2: #9d4edd;
+  --org: #ff7a00;
+  --org2: #ffb35c;
+}
+body {
+  font-family: 'Noto Sans Thai','IBM Plex Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  color: var(--text);
+}
+
   --glass: rgba(5,150,105,.07);
   --border: rgba(4,120,87,.13);
   --shadow: 0 14px 36px rgba(5,150,105,.13);
@@ -20,6 +35,7 @@ body {
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
   color: var(--text);
 }
+ main
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: .75rem 1.4rem; border-radius: 1.25rem; border: 1.5px solid transparent;
