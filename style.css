@@ -9,6 +9,7 @@
   --bg2: #e2e8f0;
   --text: #1e293b;
   --muted: #64748b;
+codex/add-css-variables-in-style.css
   --glass: rgba(5,150,105,.07);
   --border: rgba(4,120,87,.13);
   --shadow: 0 14px 36px rgba(5,150,105,.13);
@@ -22,6 +23,19 @@ body {
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
   color: var(--text);
 }
+
+  --glass: rgba(5,150,105,.07);
+  --border: rgba(4,120,87,.13);
+  --shadow: 0 14px 36px rgba(5,150,105,.13);
+}
+* , *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans Thai','IBM Plex Sans Thai',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  color: var(--text);
+}
+ main
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: .75rem 1.4rem; border-radius: 1.25rem; border: 1.5px solid transparent;
@@ -67,8 +81,12 @@ body {
 @media (max-width:700px) {
   .booking-bar { display: flex; }
 }
-.booking-bar .btn {
-  font-size: 1.08em; border-radius: 1.5rem; box-shadow: 0 2px 8px rgba(5,150,105,.10);
+.booking-bar .btn,
+.booking-bar .btn-outline {
+  gap: 6px;
+  font-size: 1.08em;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 8px rgba(5,150,105,.10);
 }
 /* ======= Service Modal Table ======= */
 .service-table {
@@ -236,6 +254,8 @@ body{
 .btn-outline{background:transparent;border-color:var(--org);color:#fff}
 .btn-outline:hover{background:linear-gradient(90deg,var(--org),var(--org2)); color:#1f1400}
 
+.btn-sm{padding:.5rem 1.2rem;font-size:.98em}
+
 /* tags */
 .taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .tag{
@@ -316,6 +336,6 @@ body{
   font-size: 1.1rem;
 }
 
-/* ใส่ภาพจริงแทนได้: 
-   <img class="avatar" src="trainer.jpg"> จะใช้รูปโดยไม่แสดง ::after */
+/* ใส่ภาพจริงแทนได้:
+   <div class="avatar"><img src="trainer.jpg" alt=""></div> */
 .avatar img{width:100%; height:100%; object-fit:cover; border-radius:50%; display:block}
